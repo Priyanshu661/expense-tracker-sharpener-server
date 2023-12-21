@@ -41,10 +41,10 @@ const expenseRoutes = require("./routes/expense");
 const purchaseRoutes = require("./routes/purchase");
 const premiumRoutes = require("./routes/premium");
 
-app.use("/auth", authRoutes);
-app.use("/expense", expenseRoutes);
-app.use("/order", purchaseRoutes);
-app.use("/premium", premiumRoutes);
+app.use("/api/auth", authRoutes);
+app.use("/api/expense", expenseRoutes);
+app.use("/api/order", purchaseRoutes);
+app.use("/api/premium", premiumRoutes);
 
 const Expense = require("./models/Expense");
 const User = require("./models/User");
